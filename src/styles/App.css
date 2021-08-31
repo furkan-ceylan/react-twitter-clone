@@ -52,10 +52,11 @@ html {
 .App {
   display: grid;
   grid-template-columns: 2.5fr 4fr 3fr;
+  height: 100vh;
 }
 
 .side-nav {
-  padding-left: 40%;
+  padding-left: 35%;
   padding-top: 3rem;
 }
 
@@ -64,20 +65,56 @@ html {
   width: 2.75rem;
 }
 
-.side-nav svg:hover {
-  fill: var(--sky-blue);
+.side-nav-item {
+  padding: 1.5rem 0.5rem;
+  transition: 0.2s;
 }
 
-.side-nav-item {
-  padding: 2rem 0;
+.side-nav-item:hover {
+  background-color: rgba(209, 209, 209, 0.1);
+  cursor: pointer;
+  transition: 0.2s;
+  border-radius: 5rem;
+  -webkit-border-radius: 5rem;
+  -moz-border-radius: 5rem;
+  -ms-border-radius: 5rem;
+  -o-border-radius: 5rem;
 }
 
 .side-nav .side-nav-item .side-nav-text {
   font-size: 2.25rem;
-  font-weight: 700;
+  font-weight: 400;
   color: var(--light);
   padding-left: 3rem;
   vertical-align: bottom;
+}
+
+.side-profile-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.side-profile {
+  display: flex;
+  flex-direction: row;
+}
+
+.side-profile-text {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.5rem;
+  margin-left: 1.5rem;
+}
+
+.side-profile-name {
+  font-weight: 700;
+  margin-bottom: 0.25rem;
+}
+
+.side-handle-name {
+  color: var(--grey);
 }
 
 .avatar {
@@ -121,6 +158,10 @@ html {
   margin-bottom: 0;
 }
 
+.mb-1 {
+  margin-bottom: 1rem;
+}
+
 .text-center {
   text-align: center;
 }
@@ -148,7 +189,9 @@ ul {
 
 .flex-space-between {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
+  height: 100%;
 }
 
 .inline-block {
