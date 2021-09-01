@@ -1,0 +1,71 @@
+.profile {
+}
+
+.profile .profile-head {
+}
+
+.profile .profile-head .banner-img {
+}
+
+.profile .profile-head .left {
+}
+
+.profile-tweet-count {
+  font-size: 1.5rem;
+  color: var(--grey);
+}
+
+.banner-img img {
+  width: 100%;
+  max-height: 200px;
+  object-fit: cover;
+}
+
+.profile-dp button {
+  padding: 0.5rem 1rem;
+  width: 120px;
+  height: 40px;
+}
+
+.profile-avatar {
+  margin-top: -8rem;
+  border: 0.5rem solid var(--thick-border);
+  border-radius: 50%;
+  width: 128px;
+  height: 128px;
+}
+
+.profile svg {
+  width: 4rem;
+  fill: var(--sky-blue);
+}
+
+.follow-me {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.follow-me > svg,
+.follow-me > button {
+  margin: 0 1rem;
+}
+
+.follow-me > .tweet-btn {
+  width: 25%;
+}
+
+.profile-description {
+  font-size: 1.8rem;
+  margin-top: 0.5rem;
+}
+
+.profile-description-contact {
+  display: flex;
+}
+
+.profile-description-contact > .location > svg {
+  width: 2.25rem;
+  fill: var(--grey);
+}
