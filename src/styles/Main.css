@@ -1,7 +1,8 @@
 /* main styles */
 .main {
-  border-left: 1px solid var(--border);
-  border-right: 1px solid var(--border);
+  border: 1px solid var(--border);
+  width: 100%;
+  height: 100%;
 }
 
 .home {
@@ -13,7 +14,7 @@
   padding: 1rem;
   display: grid;
   grid-template-columns: 1fr 9fr;
-  border-bottom: 1rem solid var(--thick-border);
+  border-bottom: 0.2rem solid var(--thick-border);
 }
 
 .new-tweet .left,
@@ -26,8 +27,8 @@
   background: transparent;
   border: none;
   color: var(--light);
-  font-size: 2rem;
-  font-weight: 700;
+  font-size: 2.5rem;
+  font-weight: 400;
 }
 
 .new-tweet-options {
