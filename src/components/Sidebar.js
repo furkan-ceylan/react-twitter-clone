@@ -11,11 +11,9 @@ import {
   MoreRoundedIcon,
   AvatarIcon,
 } from '../images/svg/svgs'
-import { SmallAvatar } from '../images/avatars'
+import UserCard from './UserCard'
 
 export const Sidebar = () => {
-  const profileImageUrl =
-    'https://pbs.twimg.com/profile_images/1384273229498384388/5hQ2wv3H_400x400.jpg'
   return (
     <div className="flex-space-between">
       <div>
@@ -39,7 +37,7 @@ export const Sidebar = () => {
             <li className="side-nav-item flex-align-center">
               <div className="side-nav-item-holder">
                 <NotificationIcon />
-                <span className="side-nav-text">Notification</span>
+                <span className="side-nav-text">Notifications</span>
               </div>
             </li>
             <li className="side-nav-item flex-align-center">
@@ -57,7 +55,7 @@ export const Sidebar = () => {
             <li className="side-nav-item flex-align-center">
               <div className="side-nav-item-holder">
                 <ListsIcon />
-                <span className="side-nav-text">List</span>
+                <span className="side-nav-text">Lists</span>
               </div>
             </li>
             <li className="side-nav-item flex-align-center">
@@ -77,13 +75,7 @@ export const Sidebar = () => {
         </div>
       </div>
       <div className="side-nav-item flex-align-center mb-1 side-profile-wrapper">
-        <div className="side-nav-item-holder side-profile">
-          <SmallAvatar width="30px" image={profileImageUrl} />
-          <div className="side-profile-text">
-            <span className="side-profile-name">username</span>
-            <span className="side-handle-name">@handle</span>
-          </div>
-        </div>
+        <UserCard />
         <div>
           <MoreIcon />
         </div>
