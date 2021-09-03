@@ -9,51 +9,43 @@ import {
 } from '../images/svg/svgs'
 import { Link } from 'react-router-dom'
 
-const TweetCard = () => {
+const TweetCard = ({ tweet }) => {
+  console.log(tweet.user)
   return (
-    <Link to={`/status/${this.tweet.id}`}>
+    <Link to={`/status/${tweet.id}`}>
       <div className="tweet-card">
         <div className="left">
-          s
-          <SmallAvatar width="48" image={this.tweet.user.image} />
+          <SmallAvatar width="48" image={tweet.user.image} />
         </div>
         <div className="right">
           <div className="tweet-card-head">
-            <span className="tweet-card-name" onClick={this.handleRouting}>
-              {this.tweet.user.name}
-            </span>
+            <span className="tweet-card-name">{tweet.user.name}</span>
 
-            <span className="tweet-card-handle" onClick={this.handleRouting}>
-              {this.tweet.user.handle}
-            </span>
+            <span className="tweet-card-handle">{tweet.user.handle}</span>
 
-            <span className="tweet-card-time"> - {this.tweet.tweet.time}</span>
+            <span className="tweet-card-time"> - {tweet.tweet.time}</span>
           </div>
           <div className="tweet-card-body">
             <div className="tweet-card-content">
-              <p className="m-0">{this.tweet.tweet.content}</p>
+              <p className="m-0">{tweet.tweet.text}</p>
             </div>
             <div className="tweet-card-image">
-              <img src={this.tweet.tweet.image} alt="" />
+              <img src={tweet.tweet.image} alt="" />
             </div>
             <div className="tweet-card-footer">
               <span className="flex-align-center">
                 <TweetCommentIcon />{' '}
                 <span className="tweet-cars-icon">
-                  {this.tweet.tweet.comments}
+                  {tweet.tweet.comments.length}
                 </span>
               </span>
               <span className="flex-align-center">
                 <TweetRetweetIcon />
-                <span className="tweet-cars-icon">
-                  {this.tweet.tweet.retweets}
-                </span>
+                <span className="tweet-cars-icon">{tweet.tweet.retweets}</span>
               </span>
               <span className="flex-align-center">
                 <TweetLikeIcon />
-                <span className="tweet-cars-icon">
-                  {this.tweet.tweet.likes}
-                </span>
+                <span className="tweet-cars-icon">{tweet.tweet.likes}</span>
               </span>
               <span className="flex-align-center">
                 <TweetSendIcon />
