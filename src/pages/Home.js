@@ -1,6 +1,7 @@
 import React from 'react'
 import AddTweet from '../components/AddTweet'
 import '../styles/Main.css'
+import TweetList from '../components/TweetList'
 
 const Home = () => {
   return (
@@ -9,7 +10,9 @@ const Home = () => {
         <h1>Home</h1>
       </div>
       <AddTweet />
-      <div className="tweets">{/* <TweetList /> */}</div>
+      <div className="tweets">
+        <TweetList />
+      </div>
     </div>
   )
 }
