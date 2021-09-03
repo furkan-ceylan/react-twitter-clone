@@ -1,15 +1,14 @@
-import React, { useContext } from 'react'
-import { GlobalContext } from '../context/GlobalState'
 import TweetCard from './TweetCard'
+import { useSelector } from 'react-redux'
 
 const TweetList = () => {
-  const { tweets } = useContext(GlobalContext)
-
+  const tweets = useSelector((state) => state.store)
+  console.log(tweets)
   return (
     <>
-      {/* {tweets.map((tweet, index) => (
+      {tweets.map((tweet, index) => (
         <TweetCard key={index} tweet={tweet} />
-      ))} */}
+      ))}
     </>
   )
 }
