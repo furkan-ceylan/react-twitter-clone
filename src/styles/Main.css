@@ -51,3 +51,7 @@
 .new-tweet .add-icons svg:first-child {
   padding-left: 0;
 }
+
+.tweet button {
+  width: 100%;
+}
