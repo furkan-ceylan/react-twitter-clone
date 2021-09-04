@@ -11,17 +11,15 @@ export const store = createStore(
         user: {
           name: 'John Doe',
           image:
-            'https://pbs.twimg.com/profile_images/1059888693945630720/yex0Gcbi_bigger.jpg',
+            'https://pbs.twimg.com/profile_images/1384273229498384388/5hQ2wv3H_400x400.jpg',
           handle: '@johndoe',
         },
         tweet: {
-          text:
-            'On World Health Day, 2020, "we reaffirm our commitment to do our part to stop the spread of this virus, care for the sick, and protect the health and well-being of our fellow Americans."',
-          image:
-            'https://pbs.twimg.com/card_img/1246823270524973058/IbkZhS3u?format=jpg&name=small',
+          text: 'This is my second Tweet',
+          image: '',
           time: '10m',
-          retweets: '320',
-          likes: '1k',
+          retweets: '75',
+          likes: '512',
           comments: [
             {
               id: 1,
@@ -36,16 +34,16 @@ export const store = createStore(
         user: {
           name: 'John Doe',
           image:
-            'https://pbs.twimg.com/profile_images/1059888693945630720/yex0Gcbi_bigger.jpg',
+            'https://pbs.twimg.com/profile_images/1384273229498384388/5hQ2wv3H_400x400.jpg',
           handle: '@johndoe',
         },
         tweet: {
           text: 'Hello everyone.',
           image:
-            'https://pbs.twimg.com/card_img/1246823270524973058/IbkZhS3u?format=jpg&name=small',
+            'https://pbs.twimg.com/profile_images/1384273229498384388/5hQ2wv3H_400x400.jpg',
           time: '10m',
-          retweets: '320',
-          likes: '1k',
+          retweets: '8',
+          likes: '126',
           comments: [
             {
               id: 1,
