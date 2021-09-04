@@ -2,68 +2,149 @@ import React from 'react'
 import {
   Logo,
   HomeIcon,
+  FilledHomeIcon,
   ExploreIcon,
+  FilledExploreIcon,
   NotificationIcon,
+  FilledNotificationIcon,
   MessageIcon,
+  FilledMessageIcon,
   BookmarkIcon,
+  FilledBookmarkIcon,
   ListsIcon,
+  FilledListsIcon,
   MoreIcon,
   MoreRoundedIcon,
   AvatarIcon,
+  FilledAvatarIcon,
 } from '../images/svg/svgs'
 import UserCard from './UserCard'
+import { useLocation } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 
 export const Sidebar = () => {
+  const location = useLocation()
+  const isHome = location.pathname === '/'
+  const isExplore = location.pathname === '/explore'
+  const isNotification = location.pathname === '/notifications'
+  const isMessages = location.pathname === '/messages'
+  const isBookmarks = location.pathname === '/bookmarks'
+  const isLists = location.pathname === '/lists'
+  const isMore = location.pathname === '/more'
+  const isProfile = location.pathname.includes('/profile')
+
   return (
-    <div className="flex-space-between">
+    <div className="flex-space-between sidebar">
       <div>
         <div className="side-nav-header">
           <Logo />
         </div>
         <div className="side-nav-items">
           <ul className="p-0">
-            <li className="side-nav-item flex-align-center">
-              <div className="side-nav-item-holder">
-                <HomeIcon />
-                <span className="side-nav-text">Home</span>
-              </div>
-            </li>
-            <li className="side-nav-item flex-align-center">
-              <div className="side-nav-item-holder">
-                <ExploreIcon />
-                <span className="side-nav-text">Explore</span>
-              </div>
-            </li>
-            <li className="side-nav-item flex-align-center">
-              <div className="side-nav-item-holder">
-                <NotificationIcon />
-                <span className="side-nav-text">Notifications</span>
-              </div>
-            </li>
-            <li className="side-nav-item flex-align-center">
-              <div className="side-nav-item-holder">
-                <MessageIcon />
-                <span className="side-nav-text">Messages</span>
-              </div>
-            </li>
-            <li className="side-nav-item flex-align-center">
-              <div className="side-nav-item-holder">
-                <BookmarkIcon />
-                <span className="side-nav-text">Bookmarks</span>
-              </div>
-            </li>
-            <li className="side-nav-item flex-align-center">
-              <div className="side-nav-item-holder">
-                <ListsIcon />
-                <span className="side-nav-text">Lists</span>
-              </div>
-            </li>
-            <li className="side-nav-item flex-align-center">
-              <div className="side-nav-item-holder">
-                <AvatarIcon />
-                <span className="side-nav-text">Profile</span>
-              </div>
-            </li>
+            <Link to="/">
+              <li className="side-nav-item flex-align-center">
+                <div className="side-nav-item-holder">
+                  {isHome ? <FilledHomeIcon /> : <HomeIcon />}
+                  <span
+                    className={
+                      isHome ? 'side-nav-text text-bold' : 'side-nav-text'
+                    }
+                  >
+                    Home
+                  </span>
+                </div>
+              </li>
+            </Link>
+            <Link to="/explore">
+              <li className="side-nav-item flex-align-center">
+                <div className="side-nav-item-holder">
+                  {isExplore ? <FilledExploreIcon /> : <ExploreIcon />}
+                  <span
+                    className={
+                      isExplore ? 'side-nav-text text-bold' : 'side-nav-text'
+                    }
+                  >
+                    Explore
+                  </span>
+                </div>
+              </li>
+            </Link>
+            <Link to="/notifications">
+              <li className="side-nav-item flex-align-center">
+                <div className="side-nav-item-holder">
+                  {isNotification ? (
+                    <FilledNotificationIcon />
+                  ) : (
+                    <NotificationIcon />
+                  )}
+                  <span
+                    className={
+                      isNotification
+                        ? 'side-nav-text text-bold'
+                        : 'side-nav-text'
+                    }
+                  >
+                    Notifications
+                  </span>
+                </div>
+              </li>
+            </Link>
+            <Link to="/messages">
+              <li className="side-nav-item flex-align-center">
+                <div className="side-nav-item-holder">
+                  {isMessages ? <FilledMessageIcon /> : <MessageIcon />}
+                  <span
+                    className={
+                      isMessages ? 'side-nav-text text-bold' : 'side-nav-text'
+                    }
+                  >
+                    Messages
+                  </span>
+                </div>
+              </li>
+            </Link>
+            <Link to="/bookmarks">
+              <li className="side-nav-item flex-align-center">
+                <div className="side-nav-item-holder">
+                  {isBookmarks ? <FilledBookmarkIcon /> : <BookmarkIcon />}
+                  <span
+                    className={
+                      isBookmarks ? 'side-nav-text text-bold' : 'side-nav-text'
+                    }
+                  >
+                    Bookmarks
+                  </span>
+                </div>
+              </li>
+            </Link>
+            <Link to="/lists">
+              <li className="side-nav-item flex-align-center">
+                <div className="side-nav-item-holder">
+                  {isLists ? <FilledListsIcon /> : <ListsIcon />}
+                  <span
+                    className={
+                      isLists ? 'side-nav-text text-bold' : 'side-nav-text'
+                    }
+                  >
+                    Lists
+                  </span>
+                </div>
+              </li>
+            </Link>
+            <Link to="/profile">
+              <li className="side-nav-item flex-align-center">
+                <div className="side-nav-item-holder">
+                  {isProfile ? <FilledAvatarIcon /> : <AvatarIcon />}
+                  <span
+                    className={
+                      isProfile ? 'side-nav-text text-bold' : 'side-nav-text'
+                    }
+                  >
+                    Profile
+                  </span>
+                </div>
+              </li>
+            </Link>
             <li className="side-nav-item flex-align-center">
               <div className="side-nav-item-holder">
                 <MoreRoundedIcon />
