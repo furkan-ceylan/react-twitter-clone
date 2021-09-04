@@ -66,6 +66,10 @@ html {
   font-weight: 400;
 }
 
+.text-bold {
+  font-weight: 700;
+}
+
 .w-100 {
   width: 100%;
 }
@@ -127,6 +131,11 @@ ul {
   font-weight: 700;
   color: var(--sky-blue);
   border: 1px solid var(--sky-blue);
+}
+
+.btn-disabled {
+  /* disabled btn */
+  opacity: 0.5;
 }
 
 .pointer {
@@ -192,6 +201,10 @@ input:focus {
   height: 100vh;
 }
 
+.sidebar {
+  position: fixed;
+}
+
 .side-nav {
   padding-left: 35%;
   padding-top: 1.5rem;
@@ -204,8 +217,9 @@ input:focus {
 }
 
 .side-nav-item {
-  padding: 2rem 0.5rem;
+  padding: 1.85rem 0.5rem;
   transition: 0.2s;
+  width: min-content;
 }
 
 .side-nav-item:hover {
@@ -219,9 +233,15 @@ input:focus {
   -o-border-radius: 5rem;
 }
 
+.side-nav-item-holder {
+  display: flex;
+  align-items: center;
+  padding-left: 1.5rem;
+  padding-right: 2rem;
+}
+
 .side-nav .side-nav-item .side-nav-text {
   font-size: 2.5rem;
-  font-weight: 400;
   color: var(--light);
   padding-left: 3rem;
   vertical-align: bottom;
