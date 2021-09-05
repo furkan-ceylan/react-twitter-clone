@@ -155,7 +155,7 @@ export const Sidebar = () => {
           <div className="btn tweet-btn text-center">Tweet</div>
         </div>
       </div>
-      <div className="side-nav-item flex-align-center mb-1 side-profile-wrapper">
+      <div className="profile-card side-nav-item flex-align-center mb-1 side-profile-wrapper">
         <UserCard />
         <div>
           <MoreIcon />
