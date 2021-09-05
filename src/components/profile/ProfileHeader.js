@@ -40,7 +40,7 @@ const ProfileHeader = () => {
             image="https://pbs.twimg.com/profile_images/1384273229498384388/5hQ2wv3H_400x400.jpg"
           />
         </a>
-        <button className="btn follow-btn">Edit Profile</button>
+        <button className="btn outlined-btn">Edit Profile</button>
         {/* <div className="follow-me">
           <MoreIcon />
           <NotificationIcon />

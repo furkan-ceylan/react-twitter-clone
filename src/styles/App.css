@@ -7,6 +7,8 @@
   --content-bg: rgb(25, 39, 52);
   --thick-border: rgb(37, 51, 65);
   --card-background: rgb(37, 51, 65);
+  --btn-bg: rgb(239, 243, 244);
+  --btn-border: rgb(239, 243, 244, 0.3);
 }
 
 body {
@@ -125,16 +127,21 @@ ul {
   width: 80%;
 }
 
-.follow-btn {
+.follow-btn,
+.outlined-btn {
   border-radius: 3rem;
   font-size: 2rem;
   font-weight: 700;
-  color: var(--sky-blue);
-  border: 1px solid var(--sky-blue);
+  border: 0.5px solid var(--btn-border);
+  color: var(--light);
+}
+
+.follow-btn {
+  color: black;
+  background-color: var(--btn-bg);
 }
 
 .btn-disabled {
-  /* disabled btn */
   opacity: 0.5;
 }
 
@@ -257,6 +264,8 @@ input:focus {
 .side-profile {
   display: flex;
   flex-direction: row;
+  width: 175px;
+  margin-bottom: 1rem;
 }
 
 .side-profile-text {
@@ -448,4 +457,8 @@ input:focus {
 .right-side-content-footer span {
   padding-left: 1rem;
   font-size: 1.5rem;
+}
+
+.profile-card svg {
+  width: 2.25rem;
 }
