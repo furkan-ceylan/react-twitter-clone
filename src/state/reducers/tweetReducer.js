@@ -1,7 +1,7 @@
 export const tweetReducer = (state = [], action) => {
   switch (action.type) {
     case 'ADD_TWEET':
-      const id = 3
+      const id = Date.now()
       const addTweet = {
         id: id,
         user: {
