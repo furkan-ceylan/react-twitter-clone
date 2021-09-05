@@ -1,22 +1,30 @@
-import React from 'react'
+import { useEffect } from 'react'
 import { StatusCard } from '../components/StatusCard'
 import { BackIcon } from '../images/svg/svgs'
 import { Link } from 'react-router-dom'
+import { useSelector } from 'react-redux'
 
 const Status = ({ match }) => {
+  useEffect(() => {
+    window.scroll(0, 0)
+  }, [])
+
   const tweetId = match.params.id
+  const tweet = useSelector((state) =>
+    state.store.find((tweet) => tweet.id == tweetId)
+  )
   return (
-    <div>
+    <div className="status-all">
       <div className="status">
         <Link to="/">
-          <button className="btn p-0">
+          <div className="status-back p-0">
             <BackIcon />
-          </button>
+          </div>
         </Link>
         <h1>Tweet</h1>
       </div>
       <div className="tweets">
-        <StatusCard tweet={getTweet(tweetId)} />
+        <StatusCard tweet={tweet} />
       </div>
     </div>
   )
