@@ -7,6 +7,13 @@
   grid-template-columns: 1fr 9fr;
   border-bottom: 0.5px solid var(--border);
   border-top: 0.5px solid var(--border);
+  padding-top: 1.5rem;
+  transition: 0.2s;
+}
+
+.tweet-card:hover {
+  background-color: #1f2831;
+  transition: 0.2s;
 }
 
 .tweet-card .left,
@@ -54,9 +61,38 @@
 .tweet-card .tweet-card-footer svg {
   fill: var(--grey);
   width: 2.5rem;
+  padding: 1rem;
+  transition: 0.2s;
 }
 
-.tweet-card .tweet-card-footer .tweet-cars-icon {
+.tweet-card-footer svg:hover {
+  border-radius: 50%;
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+.tweet-card-footer-comment svg:hover {
+  fill: rgb(18, 150, 238, 1);
+  border-radius: 50%;
+  background-color: rgba(12, 149, 228, 0.1);
+  color: rgb(18, 150, 238, 1);
+}
+
+.tweet-card-footer-retweet svg:hover {
+  fill: rgb(41, 150, 41);
+  border-radius: 50%;
+  background-color: rgba(12, 228, 41, 0.1);
+  color: rgb(41, 150, 41);
+}
+
+.tweet-card-footer-like svg:hover {
+  fill: rgb(238, 18, 110);
+  border-radius: 50%;
+  background-color: rgba(228, 12, 138, 0.1);
+  color: rgb(238, 18, 110);
+}
+
+.tweet-card .tweet-card-footer .tweet-card-icon-text {
   line-height: 2;
   font-size: 1.5rem;
   color: var(--grey);
