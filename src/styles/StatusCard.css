@@ -1,0 +1,133 @@
+.tweets {
+  overflow: hidden;
+}
+
+.status-card {
+  padding: 2rem;
+  width: 100%;
+  height: 100%;
+  font-size: 1.75rem;
+}
+
+.status-card .left {
+  display: flex;
+  align-items: center;
+}
+
+.status-card .right {
+  padding-top: 0;
+}
+
+.status-card .status-card-name {
+  font-size: 2rem;
+  font-weight: 700;
+  padding-right: 1rem;
+}
+
+.status-card .status-card-handle,
+.status-card-time {
+  font-size: 1.5rem;
+  color: var(--grey);
+}
+
+.status-card-info {
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.status-card-state {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-top: 3rem;
+  color: var(--grey);
+}
+
+.status-card-stats-item {
+  color: var(--grey);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-right: 2rem;
+  margin-top: 1rem;
+  margin-bottom: 1.5rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.status-card-stats-item-text {
+  color: var(--light);
+  font-weight: 700;
+  padding-right: 1rem;
+}
+
+.translate {
+  color: var(--sky-blue);
+}
+
+.translate:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.status-card .status-card-body .status-card-content p {
+  font-size: 2.5rem;
+  margin-top: 2rem;
+}
+
+.status-card .status-card-body .status-card-image {
+  margin-top: 2rem;
+}
+
+.status-card .status-card-body .status-card-image img {
+  width: 100%;
+  border-radius: 20px;
+}
+
+.status-card .status-card-footer {
+  padding-right: 10rem;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 1.5rem;
+  padding-top: 1.5rem;
+}
+
+.status-card .status-card-footer svg {
+  fill: var(--grey);
+  width: 3rem;
+}
+
+.status-card .status-card-footer .tweet-cars-icon {
+  line-height: 2;
+  font-size: 1.5rem;
+  color: var(--grey);
+  padding-left: 1rem;
+}
+
+.status-all {
+  width: 100%;
+  height: 100%;
+  border: 1px solid var(--border);
+}
+
+.status {
+  display: flex;
+  align-items: center;
+  padding: 0 1rem;
+  display: flex;
+  align-items: center;
+}
+
+.status h1 {
+  display: inline-block;
+  padding-left: 1rem;
+}
+
+.status svg {
+  width: 2.5rem;
+  fill: var(--light);
+  margin-right: 2rem;
+  padding-left: 1rem;
+}
