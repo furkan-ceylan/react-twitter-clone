@@ -409,7 +409,7 @@ input:focus {
   font-weight: 700;
 }
 
-.right-side-trends-item a {
+.right-side-trends-item-show {
   color: #1c81c6;
   font-size: 1.75rem;
 }
