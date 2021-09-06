@@ -30,7 +30,6 @@ export const Sidebar = () => {
   const isMessages = location.pathname === '/messages'
   const isBookmarks = location.pathname === '/bookmarks'
   const isLists = location.pathname === '/lists'
-  const isMore = location.pathname === '/more'
   const isProfile = location.pathname.includes('/profile')
 
   return (
