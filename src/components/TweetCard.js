@@ -14,22 +14,21 @@ const TweetCard = ({ tweet }) => {
   const userDetail = tweet.user
 
   return (
-    <Link to={`/status/${tweet.id}`}>
-      <div className="tweet-card">
-        <Link to={'/profile'}>
-          <div className="left">
-            <SmallAvatar width="48" image={userDetail.image} />
-          </div>
-        </Link>
-        <div className="right">
-          <div className="tweet-card-head">
-            <Link to={'/profile'}>
-              <span className="tweet-card-name">{userDetail.name}</span>
-
-              <span className="tweet-card-handle">{userDetail.handle}</span>
-            </Link>
-            <span className="tweet-card-time"> · {tweetDetail.time}</span>
-          </div>
+    <div className="tweet-card">
+      <Link to={'/profile'}>
+        <div className="left">
+          <SmallAvatar width="48" image={userDetail.image} />
+        </div>
+      </Link>
+      <div className="right">
+        <div className="tweet-card-head">
+          <Link to={'/profile'}>
+            <span className="tweet-card-name">{userDetail.name}</span>
+            <span className="tweet-card-handle">{userDetail.handle}</span>
+          </Link>
+          <span className="tweet-card-time"> · {tweetDetail.time}</span>
+        </div>
+        <Link to={`/status/${tweet.id}`}>
           <div className="tweet-card-body">
             <div className="tweet-card-content">
               <p className="m-0">{tweetDetail.text}</p>
@@ -69,9 +68,9 @@ const TweetCard = ({ tweet }) => {
               </span>
             </div>
           </div>
-        </div>
+        </Link>
       </div>
-    </Link>
+    </div>
   )
 }
 
