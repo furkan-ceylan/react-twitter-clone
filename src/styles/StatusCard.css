@@ -130,4 +130,5 @@
   fill: var(--light);
   margin-right: 2rem;
   padding-left: 1rem;
+  cursor: pointer;
 }
