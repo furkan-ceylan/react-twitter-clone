@@ -204,7 +204,7 @@ input:focus {
 
 .App {
   display: grid;
-  grid-template-columns: 2.5fr 4fr 3fr;
+  grid-template-columns: 2.5fr 3.5fr 3fr;
   height: 100vh;
 }
 
