@@ -1,13 +1,11 @@
-import { useEffect } from 'react'
 import { StatusCard } from '../components/StatusCard'
 import { BackIcon } from '../images/svg/svgs'
-import { Link } from 'react-router-dom'
 import { useSelector } from 'react-redux'
+import { useHistory } from 'react-router-dom'
 
 const Status = ({ match }) => {
-  useEffect(() => {
-    window.scroll(0, 0)
-  }, [])
+  window.scroll(0, 0)
+  const history = useHistory()
 
   const tweetId = match.params.id
   const tweet = useSelector((state) =>
@@ -16,11 +14,9 @@ const Status = ({ match }) => {
   return (
     <div className="status-all">
       <div className="status">
-        <Link to="/">
-          <div className="status-back p-0">
-            <BackIcon />
-          </div>
-        </Link>
+        <div className="status-back p-0" onClick={() => history.goBack()}>
+          <BackIcon />
+        </div>
         <h1>Tweet</h1>
       </div>
       <div className="tweets">
