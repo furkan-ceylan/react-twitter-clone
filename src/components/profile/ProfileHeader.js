@@ -1,5 +1,3 @@
-import React from 'react'
-
 import {
   BackIcon,
   NotificationIcon,
@@ -12,17 +10,18 @@ import { useHistory } from 'react-router-dom'
 import { SmallAvatar } from '../../images/avatars'
 
 const ProfileHeader = () => {
+  document.title = 'John Doe (@johndoe) / Twitter'
   const history = useHistory()
   return (
     <div>
       <div className="flex-align-center header">
         <div className="left">
-          <button onClick={() => history.goBack()} className="btn p-0">
+          <div className="status-back p-0" onClick={() => history.goBack()}>
             <BackIcon />
-          </button>
+          </div>
         </div>
         <div className="right">
-          <h1 className="m-0">The Journal</h1>
+          <h1 className="m-0">John Doe</h1>
           <p className="profile-tweet-count m-0">72.3k Tweets</p>
         </div>
       </div>
@@ -44,17 +43,17 @@ const ProfileHeader = () => {
         {/* <div className="follow-me">
           <MoreIcon />
           <NotificationIcon />
-          <button className="btn tweet-btn">Following</button>
+          <button className="btn follow-btn">Following</button>
         </div> */}
       </div>
       <div className="follow-me"></div>
       <div className="p-1">
         <div>
-          <h1 className="m-0">The Journal</h1>
-          <p className="profile-tweet-count m-0">@thejournal</p>
+          <h1 className="m-0">John Doe</h1>
+          <p className="profile-tweet-count m-0">@johndoe</p>
         </div>
         <div className="profile-description">
-          <p>Welcome to The Journal! Follow for the latest from The Journal</p>
+          <p>Welcome to my profile!</p>
         </div>
         <div className="profile-description-contact">
           <a className="location flex-align-center ">
@@ -64,7 +63,7 @@ const ProfileHeader = () => {
 
           <a className="location flex-align-center pl-1">
             <HyperLinkIcon />{' '}
-            <span className="bold-dull-para pl-1">thejournal.com</span>
+            <span className="bold-dull-para pl-1">johndoe.com</span>
           </a>
 
           <a className="location flex-align-center pl-1">
@@ -75,7 +74,7 @@ const ProfileHeader = () => {
         <div>
           <h2 className="inline-block pr-1">19</h2>
           <span className="bold-dull-para pr-1">Following</span>
-          <h2 className="inline-block pl-1">21.5K</h2>
+          <h2 className="inline-block pl-1">82</h2>
           <span className="bold-dull-para pl-1">Followers</span>
         </div>
       </div>
