@@ -1,4 +1,19 @@
 .profile {
+  border: 1px solid var(--border);
+  width: 100%;
+  height: 100%;
+}
+
+.left {
+  padding: 2.5rem 2rem;
+}
+
+.left svg {
+  width: 2.5rem;
+  fill: var(--light);
+  margin-right: 2rem;
+  padding-left: 1rem;
+  cursor: pointer;
 }
 
 .profile .profile-head {
@@ -35,11 +50,6 @@
   height: 128px;
 }
 
-.profile svg {
-  width: 4rem;
-  fill: var(--sky-blue);
-}
-
 .follow-me {
   width: 100%;
   display: flex;
@@ -68,4 +78,48 @@
 .profile-description-contact > .location > svg {
   width: 2.25rem;
   fill: var(--grey);
+}
+
+.profile-category {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  border-bottom: 0.5px var(--border) solid;
+  margin-top: 15px;
+}
+
+.profile-category span {
+  padding: 1rem;
+}
+.profile-category > div:nth-child(1),
+.profile-category > div:nth-child(3),
+.profile-category > div:nth-child(4) {
+  flex: 0.2;
+  text-align: center;
+  color: var(--grey);
+  font-size: 15px;
+  font-weight: 700;
+  padding: 15px 0px;
+  transition: 0.2s;
+}
+.profile-category > div:nth-child(2) {
+  flex: 0.4;
+  text-align: center;
+  color: var(--grey);
+  font-size: 15px;
+  font-weight: 700;
+  padding: 15px 0px;
+  transition: 0.2s;
+}
+.profile-category > div:hover {
+  background-color: rgba(158, 158, 158, 0.1);
+  transition: 0.2s;
+  cursor: pointer;
+}
+.profile-category-active span {
+  border-bottom: 4px var(--sky-blue) solid;
+}
+.profile-category-active > span {
+  color: var(--light);
 }
