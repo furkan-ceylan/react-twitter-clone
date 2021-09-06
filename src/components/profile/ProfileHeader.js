@@ -1,7 +1,5 @@
 import {
   BackIcon,
-  NotificationIcon,
-  MoreIcon,
   LocationIcon,
   HyperLinkIcon,
   Calendericon,
@@ -33,12 +31,12 @@ const ProfileHeader = () => {
         />
       </div>
       <div className="profile-dp p-1 flex-space-between-row">
-        <a className="profile-avatar">
+        <div className="profile-avatar">
           <SmallAvatar
             width="128"
             image="https://pbs.twimg.com/profile_images/1384273229498384388/5hQ2wv3H_400x400.jpg"
           />
-        </a>
+        </div>
         <button className="btn outlined-btn">Edit Profile</button>
         {/* <div className="follow-me">
           <MoreIcon />
@@ -56,20 +54,18 @@ const ProfileHeader = () => {
           <p>Welcome to my profile!</p>
         </div>
         <div className="profile-description-contact">
-          <a className="location flex-align-center ">
+          <div className="location flex-align-center ">
             <LocationIcon />{' '}
             <span className="bold-dull-para pl-1">Istanbul</span>
-          </a>
-
-          <a className="location flex-align-center pl-1">
+          </div>
+          <div className="location flex-align-center pl-1">
             <HyperLinkIcon />{' '}
             <span className="bold-dull-para pl-1">johndoe.com</span>
-          </a>
-
-          <a className="location flex-align-center pl-1">
+          </div>
+          <div className="location flex-align-center pl-1">
             <Calendericon />{' '}
             <span className="bold-dull-para pl-1">Joined january, 2017</span>
-          </a>
+          </div>
         </div>
         <div>
           <h2 className="inline-block pr-1">19</h2>
