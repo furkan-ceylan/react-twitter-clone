@@ -4,7 +4,7 @@ import { SearchIcon, SettingsIcon, MoreIcon } from '../images/svg/svgs'
 
 const RightSidebar = () => {
   return (
-    <div>
+    <div className="right-side-all">
       <div className="right-side-search">
         <SearchIcon />
         <input type="text" placeholder="Search Twitter" />
