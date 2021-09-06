@@ -19,7 +19,7 @@ const RightSidebar = () => {
             <div className="right-side-trends-item">
               <div className="right-side-trends-item-content">
                 <span>Trending in Turkey</span>
-                <soan className="right-side-trends-item-header">#trending</soan>
+                <p className="right-side-trends-item-header">#trending</p>
                 <span>4,721 Tweets</span>
               </div>
               <div className="right-side-trends-item-more">
@@ -31,7 +31,7 @@ const RightSidebar = () => {
             <div className="right-side-trends-item">
               <div className="right-side-trends-item-content">
                 <span>Trending in Turkey</span>
-                <soan className="right-side-trends-item-header">#trending</soan>
+                <p className="right-side-trends-item-header">#trending</p>
                 <span>4,721 Tweets</span>
               </div>
               <div className="right-side-trends-item-more">
@@ -43,7 +43,7 @@ const RightSidebar = () => {
             <div className="right-side-trends-item">
               <div className="right-side-trends-item-content">
                 <span>Trending in Turkey</span>
-                <soan className="right-side-trends-item-header">#trending</soan>
+                <p className="right-side-trends-item-header">#trending</p>
                 <span>4,721 Tweets</span>
               </div>
               <div className="right-side-trends-item-more">
@@ -55,7 +55,7 @@ const RightSidebar = () => {
             <div className="right-side-trends-item">
               <div className="right-side-trends-item-content">
                 <span>Trending in Turkey</span>
-                <soan className="right-side-trends-item-header">#trending</soan>
+                <p className="right-side-trends-item-header">#trending</p>
                 <span>4,721 Tweets</span>
               </div>
               <div className="right-side-trends-item-more">
@@ -65,7 +65,7 @@ const RightSidebar = () => {
           </div>
           <div className="right-side-trends-content">
             <div className="right-side-trends-item">
-              <a>Show more</a>
+              <span className="right-side-trends-item-show">Show more</span>
             </div>
           </div>
         </div>

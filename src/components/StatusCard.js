@@ -32,7 +32,7 @@ export const StatusCard = ({ tweet }) => {
             </div>
           ) : null}
           <div className="status-card-info">
-            <a className="translate">Translate Tweet</a>
+            <p className="translate">Translate Tweet</p>
             <div className="status-card-state">
               <div className="status-card-state-item">
                 <span>7:24 PM · </span>
