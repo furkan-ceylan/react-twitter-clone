@@ -4,11 +4,11 @@
   height: 100%;
 }
 
-.left {
+.left-side {
   padding: 2.5rem 2rem;
 }
 
-.left svg {
+.left-side svg {
   width: 2.5rem;
   fill: var(--light);
   margin-right: 2rem;

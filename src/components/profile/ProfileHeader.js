@@ -15,7 +15,7 @@ const ProfileHeader = () => {
   return (
     <div>
       <div className="flex-align-center header">
-        <div className="left">
+        <div className="left-side">
           <div className="status-back p-0" onClick={() => history.goBack()}>
             <BackIcon />
           </div>
