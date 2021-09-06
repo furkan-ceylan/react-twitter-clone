@@ -17,7 +17,7 @@ export const AddTweet = () => {
   let [loading, setLoading] = useState(false)
 
   const handleChange = (e) => {
-    const { text, value } = e.target
+    const { value } = e.target
     setTweetData((prevState) => ({
       ...prevState,
       text: value,
